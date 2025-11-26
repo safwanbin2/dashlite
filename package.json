@@ -1,0 +1,49 @@
+{
+  "name": "dashlite",
+  "version": "1.0.0",
+  "description": "A modern, type-safe utility library similar to lodash",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "utils",
+    "utilities",
+    "lodash",
+    "typescript",
+    "helpers",
+    "functional"
+  ],
+  "author": "Safwan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/safwanbin2/dashlite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/safwanbin2/dashlite/issues"
+  },
+  "homepage": "https://github.com/safwanbin2/dashlite#readme"
+}
