@@ -9,8 +9,9 @@ A modern, type-safe utility library similar to lodash, built with TypeScript and
 - 🎯 **Type-Safe**: Full TypeScript support with comprehensive type definitions
 - 📦 **Tree-Shakeable**: ESM support for optimal bundle sizes
 - 🔄 **Dual Format**: Both ESM and CommonJS builds included
-- ✅ **Well-Tested**: Comprehensive test coverage
+- ✅ **Well-Tested**: 151 tests with comprehensive coverage
 - 🚀 **Zero Dependencies**: No external runtime dependencies
+- 📚 **63 Utilities**: Comprehensive collection across 6 categories
 
 ## Installation
 
@@ -21,7 +22,7 @@ npm install dashlite
 ## Quick Start
 
 ```typescript
-import { chunk, debounce, pick } from 'dashlite'
+import { chunk, debounce, pick, add, max } from 'dashlite'
 
 // Array manipulation
 const chunks = chunk([1, 2, 3, 4, 5], 2)
@@ -34,7 +35,23 @@ const picked = pick({ a: 1, b: 2, c: 3 }, ['a', 'c'])
 // Function utilities
 const debouncedLog = debounce((msg: string) => console.log(msg), 1000)
 debouncedLog('Hello')
+
+// Math operations
+const total = add(5, 3)
+// => 8
+
+const maximum = max([1, 5, 3, 9, 2])
+// => 9
 ```
+
+## Categories
+
+- **Array** (34 utilities) - Manipulation, searching, slicing, sorting
+- **Function** (3 utilities) - Debounce, throttle, memoize
+- **Math** (15 utilities) - Arithmetic, rounding, aggregation, min/max
+- **Object** (4 utilities) - Pick, omit, merge, clone
+- **String** (4 utilities) - Case conversion, truncation
+- **Type** (3 utilities) - Type checking and validation
 
 ## Documentation
 
