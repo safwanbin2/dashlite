@@ -1,6 +1,6 @@
 {
   "name": "dashlite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A modern, type-safe utility library similar to lodash",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -45,5 +45,5 @@
   "bugs": {
     "url": "https://github.com/safwanbin2/dashlite/issues"
   },
-  "homepage": "https://github.com/safwanbin2/dashlite#readme"
+  "homepage": "https://dashlite-ten.vercel.app/"
 }
